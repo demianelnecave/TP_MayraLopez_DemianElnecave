@@ -1,0 +1,214 @@
+/* Registro_styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Img1.jpg");
+    margin: 0;
+    padding: 0;
+}
+.nabvar.navbar-expand-lg{
+    background-color: aqua;
+}
+
+.registro-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color:#f0f0f0;
+    border-color: #333;
+}
+h2 {
+    color: #333;
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f50f08;
+}
+/* login_styles.css */
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px sólido #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px sólido #ccc;
+    border-radius: 5px;
+}
+
+.animated-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4285F4; /* Color del boton de Inicio*/
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover {
+    background-color: #dd0c05; /* Cambia de color el boton de inicio al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+.animated-button:active {
+    transform: translateY(2px);
+}
+
+.forgot-link {
+    color: #4285F4;
+    text-decoration: none;
+    font-size: 14px;
+    display: block; /* Para que el enlace se muestre como un bloque */
+    margin-top: 10px; /* Espacio entre el botón y el enlace */
+    transition: color 0.3s;
+}
+
+.forgot-link:hover {
+    color: #12df1c; /* Cambia el color al pasar el mouse en el enlace de olvide contraseña */
+}
+
+/* styles.css para footer*/
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que las secciones se adapten en pantallas pequeñas */
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    border-bottom: 2px sólido white; /* Línea debajo del título */
+    padding-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0; /* Espacio entre elementos */
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Suaviza el cambio de color */
+}
+
+.footer-section ul li a:hover {
+    color: #ddd; /* Cambia el color al pasar el mouse */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre íconos */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px sólido #444; /* Línea superior */
+}
+
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed; /* El botón se mantiene en una posición fija */
+   
+    background-color: #25D366; /* Color característico de WhatsApp */
+    bottom: 30px;
+    right: 20px;
+    color: white; /* Color del ícono */
+    padding: 15px; /* Espacio interno del botón */
+    border-radius: 50%; /* Más circular */
+    text-align: center; /* Centrar el contenido */
+    font-size: 24px; /* Tamaño del ícono */
+    transition: transform 0.3s; /* Suaviza el efecto de animación */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+}
