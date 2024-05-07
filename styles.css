@@ -1,13 +1,18 @@
 /* Registro_styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("Img1.jpg");
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("modern-bookstore-showcasing-rows-vibrant-books.jpg");
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
-.nabvar.navbar-expand-lg{
+.navbar.navbar-expand-lg{
     background-color: aqua;
 }
+
 
 .registro-container {
     max-width: 400px;
