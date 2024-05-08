@@ -217,3 +217,37 @@ h2 {
 .whatsapp-float:hover {
     transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
 }
+
+/* Aqui se pondra estilo de la card*/
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 20px;
+}
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card-description {
+    color: #666;
+}
+.card-price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+ button{
+    align-items: center;
+    align-content: center;
+}
