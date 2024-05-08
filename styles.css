@@ -63,6 +63,13 @@ button {
 button:hover {
     background-color: #f50f08;
 }
+
+/* Estilo para el checkbox */
+.campo input[type="checkbox"],
+.campo input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 3px; /* Ajuste para alinear con el texto de la etiqueta */
+}
 /* login_styles.css */
 
 .login-container {
