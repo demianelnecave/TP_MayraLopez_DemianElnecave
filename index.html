@@ -30,19 +30,24 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Registro.html">Registro</a>
+              <li class="nav-item" id="Registro">
+                <a class="nav-link" href="Registro.html">Registro</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Login.html">Iniciar sesión</a>
+              <li class="nav-item" id="Contacto">
+                <a class="nav-link" href="Quienes Somos y Contacto.html"><span id="SobreNosotrosY"> Sobre nosotos y </span>Contacto</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Quienes Somos y Contacto.html">Sobre nosotos y Contacto</a>
+              <li class="nav-item" id="Login">
+                <a class="nav-link" href="Login.html">
+                  <span class="login-text">
+                  Iniciar Sesión
+              </span><i class="fa-solid fa-right-to-bracket"></i></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" id="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscador</button>
+              <button class="btn btn-outline-success" type="submit"> <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="search-buttom-text">Buscador</span>
+              </button>
             </form>
           </div>
         </div>
@@ -52,7 +57,7 @@
       <i class="fab fa-whatsapp"></i>
   </a>
       <!-- Contendo de la pagina de Inicio -->
-      <div clas="Catalogo"> 
+      <div class="catalogo"> 
         <h2>Catálogo recomendado</h2>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#Niños y Jóvenes">Niños y Jóvenes</a></li>
@@ -100,6 +105,7 @@
                   <button>Ir a Catalogo</button></a>
             </div>
           </div>
+        </div>
          
         <div class="container-fluid" id="Ciencia ficción"> 
           <h4>Ciencia ficción</h4>
@@ -111,8 +117,8 @@
               <p class="card-price">$99.99</p>
               <a class="dropdown-item" href="#">
                 <button>Ir a Catalogo</button></a>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <br>

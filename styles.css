@@ -64,6 +64,11 @@ button:hover {
     background-color: #f50f08;
 }
 
+/* ESTILO PARA EL CATÁLOGO DEL INDEX*/
+.catalogo{
+
+}
+
 /* Estilo para el checkbox */
 .campo input[type="checkbox"],
 .campo input[type="radio"] {
@@ -257,4 +262,80 @@ h2 {
  button{
     align-items: center;
     align-content: center;
+}
+
+
+/* PARA PANTALLAS GRANDES */
+@media screen and (max-width:1920px) {
+    
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2{
+        font-size: 3vw;
+    }
+    h4{
+        font-size: 1.5vw;
+    }
+    .login-text{
+        display: none;
+    }
+    .logo-text{
+        display: none;
+    }
+    #search{
+        height: 6vh;
+        width: 28vw;
+    }
+    .container-fluid{
+        max-width: 720px;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    h2{
+        font-size: 3vw;
+    }
+    h4{
+        font-size: 1.5vw;
+    }
+    #login-text{
+        display: none;
+    }
+   #SobreNosotrosY{
+        display: none;
+    }
+    .container-fluid{
+        width: 50%
+    }
+    .logo-text{
+        display: none;
+    }
+    #search{
+        height: 3vh;
+        width: 14w;
+    }
+    .search-buttom-text{
+        display: none;
+    }
+    .container{
+        max-width: 420px;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a{
+        padding: 2px 0px;
+    }
 }

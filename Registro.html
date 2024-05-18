@@ -30,19 +30,24 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Registro.html">Registro</a>
+              <li class="nav-item" id="Registro">
+                <a class="nav-link" href="Registro.html">Registro</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Login.html">Iniciar sesión</a>
+              <li class="nav-item" id="Contacto">
+                <a class="nav-link" href="Quienes Somos y Contacto.html"><span id="SobreNosotrosY"> Sobre nosotos y </span>Contacto</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Quienes Somos y Contacto.html">Sobre nosotos y Contacto</a>
+              <li class="nav-item" id="Login">
+                <a class="nav-link" href="Login.html">
+                  <span class="login-text">
+                  Iniciar Sesión
+              </span><i class="fa-solid fa-right-to-bracket"></i></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" id="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscador</button>
+              <button class="btn btn-outline-success" type="submit"> <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="search-buttom-text">Buscador</span>
+              </button>
             </form>
           </div>
         </div>
@@ -74,17 +79,19 @@
       </div>
       <!-- Checkbox -->
         <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">Hombre</label>
+        <label for="checkbox">Tengo +18 años</label>
     
       <input type="checkbox" id="checkbox" name="checkbox">
-      <label for="checkbox">Mujer</label><br>
+      <label for="checkbox">Soy menor de edad</label><br>
       <!-- boton select-->
       <div class="campo">
-        <label for="opciones">Selecciona una opción:</label>
+        <label for="opciones">¿Cuál es el género de libro que más te interesa en el momento?</label>
         <select id="opciones" name="opciones">
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
-            <option value="opcion3">Opción 3</option>
+            <option value="opcion1">Niños y jóvenes</option>
+            <option value="opcion2">Terror</option>
+            <option value="opcion3">Drama</option>
+            <option value="opcion4">Ciencia ficción</option>
+            <option value="opcion5">Otro</option>
         </select>
     </div>
       <button type="submit" class="animated-button">Registro</button> <!-- Botón con animación -->
