@@ -231,6 +231,12 @@ h2 {
 }
 
 /* Aqui se pondra estilo de la card*/
+.flex-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -240,30 +246,35 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     float: left;
 }
+
 .card img {
     width: 100%;
     height: auto;
 }
+
 .card-body {
     padding: 20px;
 }
+
 .card-title {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .card-description {
     color: #666;
 }
+
 .card-price {
     font-weight: bold;
     color: #333;
     margin-top: 10px;
 }
- button{
+
+button {
     align-items: center;
     align-content: center;
 }
-
 
 /* PARA PANTALLAS GRANDES */
 @media screen and (max-width:1920px) {
