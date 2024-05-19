@@ -14,42 +14,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"> <!--FUENTES DE LETRA-->
 </head>
 <body>
-    <nav class=" navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">PelisYa</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div id="logo">
+        <a href="index.html">
+            <!-- aqui icono de fotawesome -->
+            <i class="fa-solid fa-book-bookmark" style="color: #3f210d;" id="icono"></i>
+            <span class="logo-text">
+                MercadoLibros
+            </span>
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" id="Registro">
+            <a class="nav-link" href="Registro.html">Registro</a>
+          </li>
+          <li class="nav-item" id="Contacto">
+            <a class="nav-link" href="Quienes Somos.html"><span id="SobreNosotrosY"> Sobre nosotos y </span>Contacto</a>
+          </li>
+          <li class="nav-item" id="Login">
+            <a class="nav-link" href="Login.html">
+              <span class="login-text">
+              Iniciar Sesión
+          </span><i class="fa-solid fa-right-to-bracket"></i></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" id="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"> <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="search-buttom-text">Buscador</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Registro.html">Registro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Login.html">Iniciar sesión</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Catalogo
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Niños y Jóvenes</a></li>
-                  <li><a class="dropdown-item" href="#">Terror</a></li>
-                  <li><a class="dropdown-item" href="#">Drama</a></li>
-                  <li><a class="dropdown-item" href="#">Ciencia ficción</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">disponible</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscador</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+        </form>
+      </div>
+    </div>
+  </nav>
       <div class="container-fluid">
     <div class="card">
         <img src="images1.jfif" alt="Producto 1">
