@@ -119,12 +119,17 @@ button:hover {
 
 /* ESTILO PARA EL CATÁLOGO DEL INDEX*/
 .catalogo{
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    display: inline-block;
+    display: block;
+    align-content: flex-start;
 }
-
+#catalogo-title{
+    margin: 2vw 2vw 2vw 1vw;
+}
+.catalogo-container{
+    display: inline-flex;
+}
 /* Estilo para el checkbox */
 .campo input[type="checkbox"],
 .campo input[type="radio"] {
