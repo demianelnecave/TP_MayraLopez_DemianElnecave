@@ -38,6 +38,22 @@ h1{
 h2,h4,p {
     color: #f5f5f5;
 }
+
+.dropdown-item{
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+}
+
+.dropdown-item:hover {
+    background-color: #f50f08;
+}
+
+
 /* PAGINA QUIÉNES SOMOS*/
 .about-us{
     background-color: #181419;
