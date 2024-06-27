@@ -64,3 +64,33 @@ function validarForgotPassword() {
 
     return true;
 }
+
+function validarFormularioCRUD() {
+    // Captura los valores del formulario
+    const titulo = document.getElementById("titulo").value;
+    const autor = document.getElementById("nombre").value;
+    const fechaDeLanzamiento = document.getElementById("fecha-de-lanzamiento").value;
+    const rating = document.getElementById("rating").value;
+
+    // Chequeo que haya completado todo
+    if (!titulo || !autor || !fechaDeLanzamiento || !rating) {
+        alert('Por favor, complete todos los campos.');
+        return false;
+    }
+    // Almacena los datos en localStorage
+    localStorage.setItem('titulo', titulo);
+    localStorage.setItem('autor', autor);
+    localStorage.setItem('fecha de lanzamiento', fechaDeLanzamiento);
+    localStorage.setItem('rating', rating);
+
+    // O puedes almacenarlos en sessionStorage si solo deseas que persistan durante la sesión actual
+     //sessionStorage.setItem('apellido', apellido);
+     //sessionStorage.setItem('nombre', nombre);
+     //sessionStorage.setItem('correo', correo);
+     //sessionStorage.setItem('contrasena', contrasena);
+
+    // Mensaje de confirmación
+    alert("¡Se ha registrado tu libro con éxito!");
+
+    return true;
+}
