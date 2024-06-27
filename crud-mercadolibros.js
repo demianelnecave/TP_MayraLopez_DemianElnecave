@@ -129,3 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btnSaveBook.addEventListener('submit', saveBook);
     showBooksTemplate();
 });
+/*-showBooksTemplate: Función para mostrar la lista de libros almacenados en el localStorage.
+-saveBook: Función para guardar un libro. Si el libro ya existe, se actualiza; si no, se añade uno nuevo.
+-updateBook: Función para cargar los datos de un libro en el formulario para editarlo.
+-deleteBook y deleteBookAlert: Funciones para eliminar un libro con confirmación de SweetAlert.*/
