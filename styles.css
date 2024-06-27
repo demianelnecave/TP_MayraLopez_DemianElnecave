@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 .navbar.navbar-expand-lg{
-    background-color: aqua;
+    background-color: #861f67;
 }
 
 
@@ -42,7 +42,7 @@ h2,h4,p {
 .dropdown-item{
     padding: 10px 20px;
     border: none;
-    background-color: #5cb85c;
+    background-color: #521640;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -50,7 +50,7 @@ h2,h4,p {
 }
 
 .dropdown-item:hover {
-    background-color: #f50f08;
+    background-color: /* #8d1c6b*/ #662051;
 }
 
 
@@ -73,7 +73,37 @@ h2,h4,p {
     transform: scale(1.0,1.0);
 }
 
+/* Para el CRUD */
+.table {
+    margin: 30px 0px;
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
 
+.table th,
+.table td {
+    padding: 8px; 
+    text-align: center;
+}
+.table th{
+    border: 1px solid #ffffff;
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
+}
+.table td{
+    border-bottom: 1px solid #4f4f4f;
+}
+tbody{
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
+}
+
+#crud-form{
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
+}
 
 /* PAGINA REGISTRO */
 .registro-container, .login-container{
@@ -107,18 +137,25 @@ a {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #5cb85c;
-    color: white;
+    background-color: #521640;
+    color: rgb(148, 143, 143) ;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #f50f08;
+    background-color: #8b100c;
+}
+#logo{
+    font-weight: bolder;
+    padding: 1vw;
+}
+.logo-text{
+    color: goldenrod;
 }
 
 #logo:hover{
-    animation: animacion-logo 2s ease-in 0s infinite both;
+    animation: animacion-logo 3s ease-in 0s infinite both;
 }
 #logo:active{
     animation-play-state: paused;
@@ -154,13 +191,13 @@ button:hover {
 }
 /* login_styles.css */
 
-.login-container {
+.login-container{
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     background-color: #181419;
     color: rgb(148, 143, 143); 
-    border: 1px sólido #ddd;
+    border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -171,39 +208,47 @@ button:hover {
     text-align: left;
 }
 
-.form-group label {
+.form-group label,.campo label {
     display: block;
     font-weight: bold;
 }
 
-.form-group input {
+.form-group input,.campo input {
+    background-color: rgba(255,255,255,0.3);
     width: 100%;
     padding: 10px;
-    border: 1px sólido #ccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.animated-button {
+select{
+    background-color: rgba(255,255,255,0.3)
+}
+.form-group .input-search{
+    width: 50%;
+}
+
+.animated-button{
     padding: 10px 20px;
     border: none;
-    background-color: #4285F4; /* Color del boton de Inicio*/
-    color: white;
+    background-color: #521640; /* Color del boton de Inicio*/
+    color: rgb(148, 143, 143); 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.animated-button:hover {
-    background-color: #dd0c05; /* Cambia de color el boton de inicio al pasar el mouse */
+.animated-button:hover{
+    background-color: #8b100c; /* Cambia de color el boton de inicio al pasar el mouse */
     transform: translateY(-2px);
 }
 
-.animated-button:active {
+.animated-button:active{
     transform: translateY(2px);
 }
 
 .forgot-link {
-    color: #4285F4;
+    color: #852367;
     text-decoration: none;
     font-size: 14px;
     display: block; /* Para que el enlace se muestre como un bloque */
@@ -212,7 +257,7 @@ button:hover {
 }
 
 .forgot-link:hover {
-    color: #12df1c; /* Cambia el color al pasar el mouse en el enlace de olvide contraseña */
+    color: #8b100c; /* Cambia el color al pasar el mouse en el enlace de olvide contraseña */
 }
 
 /* styles.css para footer*/
@@ -233,7 +278,7 @@ button:hover {
 }
 
 .footer-section h4 {
-    border-bottom: 2px sólido white; /* Línea debajo del título */
+    border-bottom: 2px solid white; /* Línea debajo del título */
     padding-bottom: 10px;
 }
 
@@ -279,7 +324,7 @@ button:hover {
 .footer-bottom {
     text-align: center;
     padding-top: 10px;
-    border-top: 1px sólido #444; /* Línea superior */
+    border-top: 1px solid #444; /* Línea superior */
 }
 
 
@@ -329,8 +374,8 @@ button:hover {
 .card-body {
     padding: 20px;
     background-color: #333;
-    
 }
+
 
 .card-title {
     font-size: 20px;
@@ -352,6 +397,7 @@ button {
     align-items: center;
     align-content: center;
 }
+
 
 /* PARA PANTALLAS GRANDES */
 @media screen and (max-width:1920px) {
