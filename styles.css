@@ -86,6 +86,9 @@ h2,h4,p {
 .table td {
     padding: 8px; 
     text-align: center;
+    border: 1px solid #ffffff;
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
 }
 .table th{
     border: 1px solid #ffffff;
