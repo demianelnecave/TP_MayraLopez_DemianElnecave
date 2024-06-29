@@ -1,6 +1,6 @@
 function showBooksTemplate() {
     let books = JSON.parse(localStorage.getItem('books')) || [];
-    const tableBooks = document.querySelector('#list-table-mercadoLibros tbody');
+    const tableBooks = document.querySelector('#tbody-table-mercadoLibros');
     tableBooks.innerHTML = '';
     books.forEach((book, index) => {
         let tr = `<tr>
