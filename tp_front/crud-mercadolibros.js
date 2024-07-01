@@ -8,7 +8,7 @@ function showBooksTemplate() {
                     <td>${book.autor}</td>
                     <td>${book.release_date}</td>
                     <td>${book.rating}</td>
-                    <td>${book.cover}</td>
+                    <td>${book.banner}</td>
                     <td>
                         <button class="btn-cac" onclick='updateBook(${book.id})'><i class="fa fa-pencil"></i></button>
                         <button class="btn-cac" onclick='deleteBookAlert(${book.id})'><i class="fa fa-trash"></i></button>
@@ -27,9 +27,9 @@ function saveBook(event) {
     const inputAutor = document.querySelector('#autor');
     const inputReleaseDate = document.querySelector('#release-date');
     const inputRating = document.querySelector('#rating');
-    const inputCover = document.querySelector('#cover-form');
+    const inputBanner = document.querySelector('#banner-form');
 
-    if (inputTitle.value && inputAutor.value && inputReleaseDate.value && inputRating.value && inputCover.value) {
+    if (inputTitle.value && inputAutor.value && inputReleaseDate.value && inputRating.value && inputBanner.value) {
         let books = JSON.parse(localStorage.getItem('books')) || [];
 
         if (inputId.value) {
@@ -39,7 +39,7 @@ function saveBook(event) {
                 bookFind.autor = inputAutor.value;
                 bookFind.release_date = inputReleaseDate.value;
                 bookFind.rating = inputRating.value;
-                bookFind.cover = inputCover.value;
+                bookFind.banner = inputBanner.value;
             }
         } else {
             let newBook = {
@@ -48,7 +48,7 @@ function saveBook(event) {
                 autor: inputAutor.value,
                 release_date: inputReleaseDate.value,
                 rating: inputRating.value,
-                cover: inputCover.value,
+                banner: inputBanner.value,
             }
             books.push(newBook);
         }
@@ -80,13 +80,13 @@ function updateBook(bookId) {
         const inputAutor = document.querySelector('#autor');
         const inputReleaseDate = document.querySelector('#release-date');
         const inputRating = document.querySelector('#rating');
-        const inputCover = document.querySelector('#cover-form');
+        const inputBanner = document.querySelector('#banner-form');
         inputId.value = bookToUpdate.id;
         inputTitle.value = bookToUpdate.title;
         inputAutor.value = bookToUpdate.autor;
         inputReleaseDate.value = bookToUpdate.release_date;
         inputRating.value = bookToUpdate.rating;
-        inputCover.value = bookToUpdate.cover;
+        inputBanner.value = bookToUpdate.banner;
     }
 }
 
