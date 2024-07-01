@@ -1,0 +1,478 @@
+/* Registro_styles.css */
+body {
+    font-family: "Segoe UI","Roboto","Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("modern-bookstore-showcasing-rows-vibrant-books.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.navbar.navbar-expand-lg{
+    background-color: #861f67;
+}
+
+
+.nav-link:hover{
+    color: #b1dd00 ;
+}
+
+.registro-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color:#f0f0f0;
+    border-color: #333;
+}
+
+h2,h4,p {
+    color: #f5f5f5;
+}
+
+.dropdown-item{
+    padding: 10px 20px;
+    border: none;
+    background-color: #521640;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+}
+
+.dropdown-item:hover {
+    background-color: /* #8d1c6b*/ #662051;
+}
+
+
+/* PAGINA QUIÉNES SOMOS*/
+.about-us{
+    background-color: #181419;
+    background-size: cover;
+}
+.about-text h2{
+    display: inline;
+    background-color: none;
+    color: white
+}
+.about-text p{
+    display: inline-block;
+    background-color: none;
+    color: white
+}
+.about-image{
+    transform: scale(1.0,1.0);
+}
+
+/* Para el CRUD */
+.table {
+    margin: 30px 0px;
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+
+.table th,
+.table td {
+    padding: 8px; 
+    text-align: center;
+    border: 1px solid #ffffff;
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
+}
+.table th{
+    border: 1px solid #ffffff;
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
+}
+.table td{
+    border-bottom: 1px solid #4f4f4f;
+}
+tbody{
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
+}
+
+#crud-form{
+    background-color: #181419da ;
+    color: rgb(148, 143, 143);
+}
+
+/* PAGINA REGISTRO */
+.registro-container, .login-container{
+    background-color: #181419 ;
+    color: rgb(148, 143, 143);
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #521640;
+    color: rgb(148, 143, 143) ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b100c;
+}
+#logo{
+    font-weight: bolder;
+    padding: 1vw;
+}
+.logo-text{
+    color: goldenrod;
+}
+
+#logo:hover{
+    animation: animacion-logo 3s ease-in 0s infinite both;
+}
+#logo:active{
+    animation-play-state: paused;
+    transform: translateY(-2px);
+}
+@keyframes animacion-logo {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.125,1.125);
+    }
+}
+
+/* ESTILO PARA EL CATÁLOGO DEL INDEX*/
+.catalogo{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: block;
+    align-content: flex-start;
+}
+#catalogo-title{
+    margin: 2vw 2vw 2vw 1vw;
+}
+.catalogo-container{
+    display: inline-flex;
+}
+/* Estilo para el checkbox */
+.campo input[type="checkbox"],
+.campo input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 3px; /* Ajuste para alinear con el texto de la etiqueta */
+}
+/* login_styles.css */
+
+.login-container{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #181419;
+    color: rgb(148, 143, 143); 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label,.campo label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,.campo input {
+    background-color: rgba(255,255,255,0.3);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select{
+    background-color: rgba(255,255,255,0.3)
+}
+.form-group .input-search{
+    width: 50%;
+}
+
+.animated-button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #521640; /* Color del boton de Inicio*/
+    color: rgb(148, 143, 143); 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover{
+    background-color: #8b100c; /* Cambia de color el boton de inicio al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+.animated-button:active{
+    transform: translateY(2px);
+}
+
+.forgot-link {
+    color: #852367;
+    text-decoration: none;
+    font-size: 14px;
+    display: block; /* Para que el enlace se muestre como un bloque */
+    margin-top: 10px; /* Espacio entre el botón y el enlace */
+    transition: color 0.3s;
+}
+
+.forgot-link:hover {
+    color: #8b100c; /* Cambia el color al pasar el mouse en el enlace de olvide contraseña */
+}
+
+/* styles.css para footer*/
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0 100px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que las secciones se adapten en pantallas pequeñas */
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    border-bottom: 2px solid white; /* Línea debajo del título */
+    padding-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0; /* Espacio entre elementos */
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Suaviza el cambio de color */
+}
+
+.footer-section ul li a:hover {
+    color: #ddd; /* Cambia el color al pasar el mouse */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre íconos */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444; /* Línea superior */
+}
+
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed; /* El botón se mantiene en una posición fija */
+   
+    background-color: #25D366; /* Color característico de WhatsApp */
+    bottom: 30px;
+    right: 20px;
+    color: white; /* Color del ícono */
+    padding: 15px; /* Espacio interno del botón */
+    border-radius: 50%; /* Más circular */
+    text-align: center; /* Centrar el contenido */
+    font-size: 24px; /* Tamaño del ícono */
+    transition: transform 0.3s; /* Suaviza el efecto de animación */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Aqui se pondra estilo de la card*/
+.flex-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #333;
+}
+
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-description {
+    color: white;
+}
+
+.card-price {
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+button {
+    align-items: center;
+    align-content: center;
+}
+
+
+/* PARA PANTALLAS GRANDES */
+@media screen and (max-width:1920px) {
+    
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2{
+        font-size: 3vw;
+    }
+    h4{
+        font-size: 1.5vw;
+    }
+    .login-text{
+        display: none;
+    }
+    .logo-text{
+        display: none;
+    }
+    #search{
+        height: 6vh;
+        width: 28vw;
+    }
+    .container-fluid{
+        max-width: 720px;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    h2{
+        font-size: 8vw;
+    }
+    h4{
+        font-size: 4vw;
+    }
+    #login-text{
+        display: none;
+    }
+   #SobreNosotrosY{
+        display: none;
+    }
+    .container-fluid{
+        width: 50%
+    }
+    .logo-text{
+        display: none;
+    }
+    #search{
+        height: 3vh;
+        width: 14w;
+    }
+    .search-buttom-text{
+        display: none;
+    }
+    .container{
+        max-width: 420px;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a{
+        padding: 2px 0px;
+    }
+}
