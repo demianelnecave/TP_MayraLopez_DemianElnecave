@@ -21,7 +21,7 @@ def get_book(book_id):
 def create_book():
     data = request.json
     #agregar una logica de validacion de datos
-    new_book = Book(None,data['title'],data['autor'],data['release_date'],data['banner'])
+    new_book = Book(None,data['title'],data['autor'],data['release_date'], data['rating'], data['banner'])
     new_book.save()
     return jsonify({'message':'Libro creado con éxito'}), 201
     
@@ -34,6 +34,7 @@ def update_book(book_id):
     book.title = data['title']
     book.autor = data['autor']
     book.release_date = data['release_date']
+    book.rating = data['rating']
     book.banner = data['banner']
     book.save()
     return jsonify({'message': 'Book updated successfully'})

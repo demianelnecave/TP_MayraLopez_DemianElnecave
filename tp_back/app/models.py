@@ -2,11 +2,12 @@ from app.database import get_db
 
 class Book:
     #CONSTRUCTOR
-    def __init__(self,id_book=None,title=None,autor=None,release_date=None,banner=None):
+    def __init__(self,id_book=None,title=None,autor=None,release_date=None,rating=None,banner=None):
         self.id_book = id_book
         self.title = title
         self.autor = autor
         self.release_date = release_date
+        self.rating = rating
         self.banner = banner
 
     @staticmethod #No dependo de instanciar la clase para usar este método
@@ -17,7 +18,7 @@ class Book:
         row = cursor.fetchone()
         cursor.close()
         if row:
-            return Book(id_book=row[0], title=row[1], autor=row[2], release_date=row[3], banner=row[4])
+            return Book(id_book=row[0], title=row[1], autor=row[2], release_date=row[3], rating=row[4], banner=row[5])
         return None
     
     @staticmethod    
@@ -26,7 +27,7 @@ class Book:
         cursor = db.cursor()
         cursor.execute("SELECT * FROM books")
         rows = cursor.fetchall()
-        books = [Book(id_book=row[0], title=row[1], autor=row[2], release_date=row[3], banner=row[4]) for row in rows]
+        books = [Book(id_book=row[0], title=row[1], autor=row[2], release_date=row[3], rating=row[4], banner=row[5]) for row in rows]
         # books = []
         # for row in rows:
         #     new_book =  Book(row[0],row[1],row[2],row[3],row[4])
@@ -40,13 +41,13 @@ class Book:
         cursor = db.cursor()
         if self.id_book:
             cursor.execute("""
-                UPDATE books SET title = %s, autor = %s, release_date = %s, banner = %s
+                UPDATE books SET title = %s, autor = %s, release_date = %s, rating = %s, banner = %s
                 WHERE id_book = %s
-            """, (self.title, self.autor, self.release_date, self.banner, self.id_book))
+            """, (self.title, self.autor, self.release_date, self.rating ,self.banner, self.id_book))
         else:
             cursor.execute("""
-                INSERT INTO books (title, autor, release_date, banner) VALUES (%s, %s, %s, %s)
-            """, (self.title, self.autor, self.release_date, self.banner))
+                INSERT INTO books (title, autor, release_date, rating, banner) VALUES (%s, %s, %s, %s, %s)
+            """, (self.title, self.autor, self.release_date, self.rating, self.banner))
             self.id_book = cursor.lastrowid
         db.commit()
         cursor.close()
@@ -64,6 +65,7 @@ class Book:
             'title': self.title,
             'autor': self.autor,
             'release_date': self.release_date.strftime("%Y-%m-%d"),
+            'rating': self.rating,
             'banner': self.banner,
         }
     
