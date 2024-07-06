@@ -5,6 +5,7 @@ const PORT = 5550;
 app.use(express.json());
 
 app.post('/api/books', (req, res) => {
+  const newBookData = req.body;
   console.log('Datos del nuevo libro:', req.body);
   res.json({ message: 'Libro creado exitosamente' });
 });
