@@ -4,7 +4,7 @@ CREATE TABLE `books` (
   `title` varchar(200) NOT NULL,
   `autor` varchar(150) NOT NULL,
   `release_date` date DEFAULT NULL,
-  `rating` int DEFAULT NULL,
+  `rating` decimal(2,1) DEFAULT NULL,
   `banner` varchar(225) DEFAULT NULL,
   PRIMARY KEY (`id_book`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
