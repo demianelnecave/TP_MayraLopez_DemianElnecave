@@ -150,9 +150,9 @@ async function updatebook(id){
 // Escuchar el evento 'DOMContentLoaded' que se dispara cuando el 
 // contenido del DOM ha sido completamente cargado y parseado.
 document.addEventListener('DOMContentLoaded',function(){
-    const btnSavebook = document.querySelector('#btn-save-book');
+    const formSaveBook = document.querySelector('#form-books');
     // //ASOCIAR UNA FUNCION AL EVENTO CLICK DEL BOTON
-    btnSavebook.addEventListener('click',savebook);
+    formSaveBook.addEventListener('submit',savebook);
     showbooks();
 });
   
